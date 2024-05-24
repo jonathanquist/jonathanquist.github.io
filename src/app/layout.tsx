@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import MenuRight from "@/components/Menu/MenuRight/MenuRight";
 
 import "./font.css";
 import "./globals.css";
-import FooterSocial from "@/components/Footer/FooterSocial";
 
 export const metadata: Metadata = {
   title: {
