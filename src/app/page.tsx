@@ -9,13 +9,13 @@ export default function Page() {
   useEffect(() => {
     if (typeof window !== "undefined") {
       // check if code is running on client side
-      router.push("https://portfolio-alpha-rosy-36.vercel.app/about");
+      router.push("https://portfolio-alpha-rosy-36.vercel.app/");
     }
   }, [router]);
 
   return (
     <div>
-      <p>Redirecting...</p>
+      <p className="font-caviar text-5xl">Redirecting...</p>
     </div>
   );
 }

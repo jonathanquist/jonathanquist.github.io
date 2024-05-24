@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="custom-scroll flex h-screen w-full flex-col overflow-y-scroll">
+        <div className="custom-scroll flex h-screen w-full flex-col items-center justify-center overflow-y-scroll">
           {children}
         </div>
       </body>
