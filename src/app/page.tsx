@@ -1,17 +1,18 @@
 "use client";
 
+import { useEffect } from "react";
+import { useRouter } from "next/router";
+
 export default function Page() {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.push("https://portfolio-alpha-rosy-36.vercel.app/about");
+  }, []);
+
   return (
     <div>
       <p>Redirecting...</p>
     </div>
   );
-}
-
-export async function getServerSideProps(context: any) {
-  context.res.writeHead(302, {
-    Location: "https://portfolio-alpha-rosy-36.vercel.app/about",
-  });
-  context.res.end();
-  return { props: {} };
 }
