@@ -8,7 +8,7 @@ export default function Page() {
 
   useEffect(() => {
     router.push("https://portfolio-alpha-rosy-36.vercel.app/about");
-  }, []);
+  }, [router]);
 
   return (
     <div>
